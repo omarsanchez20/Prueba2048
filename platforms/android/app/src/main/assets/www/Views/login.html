@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game - Login</title>
+    <link href="Public/css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="login-container">
+        <div class="login-image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/2048_logo.svg" alt="Logo" class="login-logo">
+        </div>
+        <h2 class="login-heading">Inicia sesión</h2>
+
+        <form>
+            <div class="login-input-group">
+                <input type="email" class="login-input" id="email" placeholder="Correo electrónico">
+            </div>
+            <div class="login-input-group">
+                <input type="password" class="login-input" id="password" placeholder="Contraseña">
+            </div>
+            <div class="login-button-group">
+                <button type="submit" class="login-button">Iniciar sesión</button>
+            </div>
+        </form>
+
+        <div class="login-links">
+            <p>¿Aún no tienes una cuenta? <a class="login-link">Regístrate aquí</a></p>
+            <p>O inicia sesión con:</p>
+            <a href="#" class="login-social-icon">
+                <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google" class="login-social-logo">
+            </a>
+            <a href="#" class="login-social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="login-social-logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="login-navbar"></div>
+    
+</body>
+
+    <script src="Public/js/login.js"></script>
+    <script src="Public/js/jquery/dist/jquery.min.js"></script>
+    <script src="Public/js/index.js"></script>
+    
+    <script>
+        loadPartialView('navbar', document.querySelector('.login-navbar'), false)
+    </script>
+
+</html>

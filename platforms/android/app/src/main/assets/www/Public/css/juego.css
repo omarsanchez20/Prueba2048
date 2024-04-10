@@ -1,0 +1,122 @@
+#cuerpo-juego {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f2f2f2 !important;
+    color: #333 !important;
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+}
+
+.game-container {
+    max-width: 100%;
+}
+
+.game-container h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-container hr {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#board {
+    max-width: 90vw;
+    width: 300px;
+    height: auto;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #b0b0b0;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.score-panel, .high-score-panel {
+    flex: 0 1 auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.score-panel h2, .high-score-panel h2 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.score-panel span, .high-score-panel span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.retry-icon {
+    font-size: 32px;
+}
+
+/* Estilos para el botón de reinicio */
+.retry-icon {
+    flex: 0 0 auto;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.retry-icon:hover {
+    transform: scale(1.1);
+}
+
+/* colored tiles */
+.x2 { background-color: #7dadd3; }
+.x4 { background-color: #7dadd3; }
+.x8 { background-color: #7dadd3; }
+.x16 { background-color: #406c8e; }
+.x32 { background-color: #406c8e; }
+.x64 { background-color: #406c8e; }
+.x128 { background-color: #3d4652; }
+.x256 { background-color: #3d4652; }
+.x512 { background-color: #3d4652; }
+.x1024 { background-color: #1a181c; }
+.x2048 { background-color: #1a181c; }
+
+.music-text {
+    color: greenyellow;
+}

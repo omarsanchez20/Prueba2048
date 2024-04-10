@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333; /* Color de fondo oscuro */
+    color: #ffffff; /* Texto en blanco */
+}
+
+.container {
+    position: relative; /* Para que el contenido quede encima del fondo */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1638561186238-3227892dbc18?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Nueva imagen estática del juego */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opacidad del fondo */
+    z-index: -1; /* Fondo detrás del contenido */
+}
+
+.h2-custom {
+    font-size: 48px;
+    color: #ffcc00; /* Texto en amarillo */
+}
+
+.lead {
+    color: #ffffff; /* Texto en blanco */
+}
+
+.btn-custom {
+    background-color: #ffcc00; /* Color amarillo */
+    border-color: #ffcc00;
+    color: #333; /* Texto en fondo oscuro */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ffdb4d; /* Color amarillo más claro */
+    border-color: #ffdb4d;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #ffffff; /* Texto en blanco */
+    margin: 0 5px;
+}
