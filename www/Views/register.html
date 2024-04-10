@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game - Registro</title>
+    <link href="Public/css/register.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="register-container">
+        <div class="register-image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/2048_logo.svg" alt="Logo" class="register-logo">
+        </div>
+        <h2 class="register-heading">Regístrate</h2>
+
+        <form>
+            <div class="register-input-group">
+                <input type="text" class="register-input" id="username" placeholder="Nombre de usuario">
+            </div>
+            <div class="register-input-group">
+                <input type="text" class="register-input" id="email" placeholder="Correo electrónico">
+            </div>
+            <div class="register-input-group">
+                <input type="password" class="register-input" id="password" placeholder="Contraseña">
+            </div>
+            <div class="register-button-group">
+                <button type="button" class="register-button" id="btn-register">Registrarse</button>
+            </div>
+        </form>
+
+        <div class="register-links">
+            <p>¿Ya tienes una cuenta? <a href="login.html" class="register-link">Inicia sesión aquí</a></p>
+            <p>O regístrate con:</p>
+            <a href="#" class="register-social-icon">
+                <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google" class="register-social-logo">
+            </a>
+            <a href="#" class="register-social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="register-social-logo">
+            </a>
+        </div>
+    </div>
+    
+    <div class="register-navbar"></div>
+
+</body>
+
+    <script src="Public/js/register.js"></script>
+
+    <script>
+        loadPartialView('navbar', document.querySelector('.register-navbar'), false)
+
+        $('#btn-register').click(function() {
+            var username = $('#username').val();
+            var email = $('#email').val();
+            var password = $('#password').val();
+
+            var registerData = {
+                Username: username,
+                Email: email,
+                Password: password,
+                HighScore: 0
+            }
+
+            registerUser(registerData);
+        });
+    </script>
+
+</html>
