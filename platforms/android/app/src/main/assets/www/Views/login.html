@@ -16,13 +16,13 @@
 
         <form>
             <div class="login-input-group">
-                <input type="email" class="login-input" id="email" placeholder="Correo electrónico">
+                <input type="text" class="login-input" id="username" placeholder="Usuario">
             </div>
             <div class="login-input-group">
                 <input type="password" class="login-input" id="password" placeholder="Contraseña">
             </div>
             <div class="login-button-group">
-                <button type="submit" class="login-button">Iniciar sesión</button>
+                <button type="button" id="btn-login" class="login-button">Iniciar sesión</button>
             </div>
         </form>
 
@@ -48,6 +48,18 @@
     
     <script>
         loadPartialView('navbar', document.querySelector('.login-navbar'), false)
+
+        $('#btn-login').click(function() {
+            var username = $('#username').val();
+            var password = $('#password').val();
+
+            var loginData = {
+                Username: username,
+                Password: password
+            }
+
+            loginUser(loginData);
+        });
     </script>
 
 </html>

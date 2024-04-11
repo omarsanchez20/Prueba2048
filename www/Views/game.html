@@ -6,7 +6,7 @@
     <title>2048 - Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ArcadeClassic&display=swap">
-    <link rel="stylesheet" href="Public/css/juego.css">
+    <link rel="stylesheet" href="../Public/css/juego.css">
 </head>
 
 <div id="cuerpo-juego">
@@ -18,12 +18,8 @@
 
             <div id="menu-sonido">
                 <h5 class="music-text">Musica</h5>
-                <button class="activate-sound">
-                    <img src="/www/lib/bootstrap-icons/icons/toggle-on.svg" alt="Activar sonido" width="24" height="24" class="sound-icon">
-                </button>
-                <button class="deactivate-sound">
-                    <img src="/www/lib/bootstrap-icons/icons/toggle-off.svg" alt="Desactivar sonido" width="24" height="24" class="sound-icon">
-                </button>
+                <button id="activar-sonido"><i class="fa fa-play"></i>Activar sonido</button>
+                <button id="desactivar-sonido"><i class="fa fa-pause"></i> Desactivar sonido</button>
             </div>
             <hr>
             <div id="board">
@@ -45,7 +41,8 @@
     <div class="game-navbar"></div>
 </div>
 
-<script src="Public/js/juego.js"></script>
+<script src="../Public/js/juego.js"></script>
+<script src="../Public/js/sound.js"></script>
 <script src="Public/js/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 

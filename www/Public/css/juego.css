@@ -53,7 +53,13 @@
     box-sizing: border-box;
     color: #333;
     background-color: #ffffff;
+    animation: appear 0.9s ease-in-out forwards;
 }
+
+@keyframes appear {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
 
 .score-container {
     display: flex;
